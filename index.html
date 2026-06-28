@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YappyUnc — the yapping-uncle flap game</title>
+  <meta name="description" content="YappyUnc is a free, cheeky one-tap arcade game starring an uncle who just won't stop talking. Flap, dodge the pipes, and climb the Game Center leaderboard.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+
+    <div class="hero-icon-scene">
+      <div class="hero-icon" id="heroIcon">
+        <img src="assets/icon.png" alt="YappyUnc app icon">
+        <span class="hero-bubble">YAP!</span>
+      </div>
+    </div>
+    <h1 class="title display">YappyUnc</h1>
+    <p class="pitch">The free one-tap arcade game starring an uncle who <em>will not</em> stop talking. Flap, dodge the pipes, and out-yap your friends.</p>
+
+    <div class="hero-cta">
+      <a class="btn-chunky big" href="#">Get it free</a>
+    </div>
+    <span class="soon">🚧 Coming soon to the App Store — link goes live at launch.</span>
+  </header>
+
+  <!-- ===== Screenshots ===== -->
+  <section class="block alt">
+    <div class="wrap">
+      <h2 class="section display">Take a look</h2>
+      <p class="sub">One uncle. Endless pipes. Zero chill.</p>
+      <div class="shots-wrap">
+        <figure class="shot-fig">
+          <div class="phone"><img src="assets/shot-menu.png" alt="YappyUnc main menu" loading="lazy"></div>
+          <span class="cap">Pick your mode</span>
+        </figure>
+        <figure class="shot-fig">
+          <div class="phone"><img src="assets/shot-dodge.png" alt="YappyUnc gameplay — dodging a pipe" loading="lazy"></div>
+          <span class="cap">Squeeze through the pipes</span>
+        </figure>
+        <figure class="shot-fig">
+          <div class="phone"><img src="assets/shot-yap.png" alt="YappyUnc — collecting a topic and yapping" loading="lazy"></div>
+          <span class="cap">Collect topics, unleash the yap</span>
+        </figure>
+        <figure class="shot-fig">
+          <div class="phone"><img src="assets/shot-gameover.png" alt="YappyUnc game over screen" loading="lazy"></div>
+          <span class="cap">Beat your best</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="block">
+    <div class="wrap">
+      <h2 class="section display">Simple to play, hard to put down</h2>
+      <p class="sub">One tap to flap. Everything else is pure chaos and trash talk.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="ico">🆓</div>
+          <h3>Free, no catch</h3>
+          <p>The whole game, completely free. No in-app purchases, no ads, no sign-up — just tap and play.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">😌</div>
+          <h3>Two ways to play</h3>
+          <p>Go for a high score in <strong>Yap Run</strong>, or just vibe through the pipes in laid-back <strong>Chill Mode</strong>.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🏆</div>
+          <h3>Game Center leaderboard</h3>
+          <p>Beat your best and climb the global ranks against everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Support ===== -->
+  <section class="block alt" id="support">
+    <div class="wrap narrow">
+      <h2 class="section display">Support &amp; Help</h2>
+      <p class="sub">Something not working? Most things are answered below.</p>
+
+      <div class="faq">
+        <details>
+          <summary>Is YappyUnc really free?</summary>
+          <p>Yes — completely. There are no in-app purchases, no ads, and no account to sign up for. Download it and play.</p>
+        </details>
+        <details>
+          <summary>My scores don't show on the leaderboard</summary>
+          <p>The leaderboard uses Apple <strong>Game Center</strong>. Make sure it's enabled in your iOS Settings and that you're signed in. Scores submit automatically when you beat your best.</p>
+        </details>
+        <details>
+          <summary>Does it need an internet connection?</summary>
+          <p>No — the game plays fully offline. Only the Game Center leaderboard needs a connection so your ranking can sync.</p>
+        </details>
+        <details>
+          <summary>Found a bug or have an idea?</summary>
+          <p>I'd love to hear it — drop me an email below. It's just one person making this, so every report genuinely helps.</p>
+        </details>
+      </div>
+
+      <div class="contact-cta">
+        <p class="sub" style="margin-bottom:14px;">Still stuck, or just want to say hi?</p>
+        <a class="btn-chunky" href="mailto:CONTACT@EXAMPLE.COM">📧 Email support</a>
+        <p class="soon" style="position:static;">Solo developer — replies may take a couple of days. Thanks for your patience!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site">
+    <nav>
+      <a href="index.html">Home</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="impressum.html">Impressum</a>
+    </nav>
+    <div class="copy">© 2026 YappyUnc · Made with ❤️ and too much talking</div>
+  </footer>
+
+  <script>
+  (function(){
+    const icon = document.getElementById('heroIcon');
+    if (icon) {
+      const M = 14;
+      icon.addEventListener('pointermove', e => {
+        const r = icon.getBoundingClientRect();
+        const nx = (e.clientX - r.left) / r.width - 0.5;
+        const ny = (e.clientY - r.top) / r.height - 0.5;
+        icon.style.transform = `rotateY(${nx*2*M}deg) rotateX(${-ny*2*M}deg)`;
+      });
+      icon.addEventListener('pointerleave', () => { icon.style.transform = 'rotateY(0) rotateX(0)'; });
+    }
+  })();
+  </script>
+
+</body>
+</html>

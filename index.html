@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YappyUnc — the yapping-uncle flap game</title>
   <meta name="description" content="YappyUnc is a free, cheeky one-tap arcade game starring an uncle who just won't stop talking. Flap, dodge the pipes, and climb the Game Center leaderboard.">
   <link rel="stylesheet" href="style.css">
+  <script>
+  (function(){var l;try{l=localStorage.getItem('yu-lang');}catch(e){}if(!l){l=(navigator.language||'en').slice(0,2);}l=(l==='de')?'de':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);})();
+  </script>
 </head>
 <body>
+
+  <div class="lang-toggle" role="group" aria-label="Language / Sprache">
+    <button data-l="en" type="button">EN</button>
+    <button data-l="de" type="button">DE</button>
+  </div>
 
   <!-- ===== Hero ===== -->
   <header class="hero">
@@ -21,35 +29,50 @@
       </div>
     </div>
     <h1 class="title display">YappyUnc</h1>
-    <p class="pitch">The free one-tap arcade game starring an uncle who <em>will not</em> stop talking. Flap, dodge the pipes, and out-yap your friends.</p>
+    <p class="pitch">
+      <span class="lang-en">The free one-tap arcade game starring an uncle who <em>will not</em> stop talking. Flap, dodge the pipes, and out-yap your friends.</span>
+      <span class="lang-de">Das kostenlose Ein-Tipp-Arcade-Spiel mit einem Onkel, der <em>einfach nicht</em> aufhört zu reden. Flattere los, weiche den Röhren aus und quatsch deine Freunde an die Wand.</span>
+    </p>
 
     <div class="hero-cta">
-      <a class="btn-chunky big" href="#">Get it free</a>
+      <a class="btn-chunky big" href="#">
+        <span class="lang-en">Get it free</span>
+        <span class="lang-de">Gratis laden</span>
+      </a>
     </div>
-    <span class="soon">🚧 Coming soon to the App Store — link goes live at launch.</span>
+    <span class="soon">
+      <span class="lang-en">🚧 Coming soon to the App Store — link goes live at launch.</span>
+      <span class="lang-de">🚧 Bald im App Store — der Link geht zum Launch live.</span>
+    </span>
   </header>
 
   <!-- ===== Screenshots ===== -->
   <section class="block alt">
     <div class="wrap">
-      <h2 class="section display">Take a look</h2>
-      <p class="sub">One uncle. Endless pipes. Zero chill.</p>
+      <h2 class="section display">
+        <span class="lang-en">Take a look</span>
+        <span class="lang-de">Wirf einen Blick rein</span>
+      </h2>
+      <p class="sub">
+        <span class="lang-en">One uncle. Endless pipes. Zero chill.</span>
+        <span class="lang-de">Ein Onkel. Endlose Röhren. Null Ruhe.</span>
+      </p>
       <div class="shots-wrap">
         <figure class="shot-fig">
           <div class="phone"><img src="assets/shot-menu.png" alt="YappyUnc main menu" loading="lazy"></div>
-          <span class="cap">Pick your mode</span>
+          <span class="cap"><span class="lang-en">Pick your mode</span><span class="lang-de">Wähle deinen Modus</span></span>
         </figure>
         <figure class="shot-fig">
           <div class="phone"><img src="assets/shot-dodge.png" alt="YappyUnc gameplay — dodging a pipe" loading="lazy"></div>
-          <span class="cap">Squeeze through the pipes</span>
+          <span class="cap"><span class="lang-en">Squeeze through the pipes</span><span class="lang-de">Zwäng dich durch die Röhren</span></span>
         </figure>
         <figure class="shot-fig">
           <div class="phone"><img src="assets/shot-yap.png" alt="YappyUnc — collecting a topic and yapping" loading="lazy"></div>
-          <span class="cap">Collect topics, unleash the yap</span>
+          <span class="cap"><span class="lang-en">Collect topics, unleash the yap</span><span class="lang-de">Sammle Themen, entfessle das Gelaber</span></span>
         </figure>
         <figure class="shot-fig">
           <div class="phone"><img src="assets/shot-gameover.png" alt="YappyUnc game over screen" loading="lazy"></div>
-          <span class="cap">Beat your best</span>
+          <span class="cap"><span class="lang-en">Beat your best</span><span class="lang-de">Knack deinen Rekord</span></span>
         </figure>
       </div>
     </div>
@@ -58,23 +81,32 @@
   <!-- ===== Features ===== -->
   <section class="block">
     <div class="wrap">
-      <h2 class="section display">Simple to play, hard to put down</h2>
-      <p class="sub">One tap to flap. Everything else is pure chaos and trash talk.</p>
+      <h2 class="section display">
+        <span class="lang-en">Simple to play, hard to put down</span>
+        <span class="lang-de">Einfach zu spielen, schwer aus der Hand zu legen</span>
+      </h2>
+      <p class="sub">
+        <span class="lang-en">One tap to flap. Everything else is pure chaos and trash talk.</span>
+        <span class="lang-de">Ein Tipp zum Flattern. Der Rest ist pures Chaos und Gelaber.</span>
+      </p>
       <div class="features">
         <div class="feature">
           <div class="ico">🆓</div>
-          <h3>Free, no catch</h3>
-          <p>The whole game, completely free. No in-app purchases, no ads, no sign-up — just tap and play.</p>
+          <h3><span class="lang-en">Free, no catch</span><span class="lang-de">Gratis, kein Haken</span></h3>
+          <p class="lang-en">The whole game, completely free. No in-app purchases, no ads, no sign-up — just tap and play.</p>
+          <p class="lang-de">Das ganze Spiel, komplett gratis. Keine In-App-Käufe, keine Werbung, keine Anmeldung — einfach tippen und spielen.</p>
         </div>
         <div class="feature">
           <div class="ico">😌</div>
-          <h3>Two ways to play</h3>
-          <p>Go for a high score in <strong>Yap Run</strong>, or just vibe through the pipes in laid-back <strong>Chill Mode</strong>.</p>
+          <h3><span class="lang-en">Two ways to play</span><span class="lang-de">Zwei Spielmodi</span></h3>
+          <p class="lang-en">Go for a high score in <strong>Yap Run</strong>, or just vibe through the pipes in laid-back <strong>Chill Mode</strong>.</p>
+          <p class="lang-de">Jage einen Highscore im <strong>Yap Run</strong> oder gleite entspannt durch die Röhren im <strong>Chill Mode</strong>.</p>
         </div>
         <div class="feature">
           <div class="ico">🏆</div>
-          <h3>Game Center leaderboard</h3>
-          <p>Beat your best and climb the global ranks against everyone.</p>
+          <h3><span class="lang-en">Game Center leaderboard</span><span class="lang-de">Game-Center-Bestenliste</span></h3>
+          <p class="lang-en">Beat your best and climb the global ranks against everyone.</p>
+          <p class="lang-de">Knack deinen Rekord und klettere in der weltweiten Rangliste nach oben.</p>
         </div>
       </div>
     </div>
@@ -83,32 +115,51 @@
   <!-- ===== Support ===== -->
   <section class="block alt" id="support">
     <div class="wrap narrow">
-      <h2 class="section display">Support &amp; Help</h2>
-      <p class="sub">Something not working? Most things are answered below.</p>
+      <h2 class="section display">
+        <span class="lang-en">Support &amp; Help</span>
+        <span class="lang-de">Support &amp; Hilfe</span>
+      </h2>
+      <p class="sub">
+        <span class="lang-en">Something not working? Most things are answered below.</span>
+        <span class="lang-de">Etwas funktioniert nicht? Das Meiste ist unten beantwortet.</span>
+      </p>
 
       <div class="faq">
         <details>
-          <summary>Is YappyUnc really free?</summary>
-          <p>Yes — completely. There are no in-app purchases, no ads, and no account to sign up for. Download it and play.</p>
+          <summary><span class="lang-en">Is YappyUnc really free?</span><span class="lang-de">Ist YappyUnc wirklich gratis?</span></summary>
+          <p class="lang-en">Yes — completely. There are no in-app purchases, no ads, and no account to sign up for. Download it and play.</p>
+          <p class="lang-de">Ja — komplett. Keine In-App-Käufe, keine Werbung, kein Konto. Herunterladen und spielen.</p>
         </details>
         <details>
-          <summary>My scores don't show on the leaderboard</summary>
-          <p>The leaderboard uses Apple <strong>Game Center</strong>. Make sure it's enabled in your iOS Settings and that you're signed in. Scores submit automatically when you beat your best.</p>
+          <summary><span class="lang-en">My scores don't show on the leaderboard</span><span class="lang-de">Meine Punkte erscheinen nicht in der Bestenliste</span></summary>
+          <p class="lang-en">The leaderboard uses Apple <strong>Game Center</strong>. Make sure it's enabled in your iOS Settings and that you're signed in. Scores submit automatically when you beat your best.</p>
+          <p class="lang-de">Die Bestenliste nutzt Apple <strong>Game Center</strong>. Stell sicher, dass es in den iOS-Einstellungen aktiviert ist und du angemeldet bist. Punkte werden automatisch übertragen, wenn du deinen Rekord knackst.</p>
         </details>
         <details>
-          <summary>Does it need an internet connection?</summary>
-          <p>No — the game plays fully offline. Only the Game Center leaderboard needs a connection so your ranking can sync.</p>
+          <summary><span class="lang-en">Does it need an internet connection?</span><span class="lang-de">Braucht das Spiel eine Internetverbindung?</span></summary>
+          <p class="lang-en">No — the game plays fully offline. Only the Game Center leaderboard needs a connection so your ranking can sync.</p>
+          <p class="lang-de">Nein — das Spiel läuft komplett offline. Nur die Game-Center-Bestenliste braucht eine Verbindung, damit dein Ranking synchronisiert wird.</p>
         </details>
         <details>
-          <summary>Found a bug or have an idea?</summary>
-          <p>I'd love to hear it — drop me an email below. It's just one person making this, so every report genuinely helps.</p>
+          <summary><span class="lang-en">Found a bug or have an idea?</span><span class="lang-de">Fehler gefunden oder eine Idee?</span></summary>
+          <p class="lang-en">I'd love to hear it — drop me an email below. It's just one person making this, so every report genuinely helps.</p>
+          <p class="lang-de">Immer her damit — schreib mir unten eine E-Mail. Hier werkelt nur eine Person, also hilft jede Rückmeldung wirklich.</p>
         </details>
       </div>
 
       <div class="contact-cta">
-        <p class="sub" style="margin-bottom:14px;">Still stuck, or just want to say hi?</p>
-        <a class="btn-chunky" href="mailto:CONTACT@EXAMPLE.COM">📧 Email support</a>
-        <p class="soon" style="position:static;">Solo developer — replies may take a couple of days. Thanks for your patience!</p>
+        <p class="sub" style="margin-bottom:14px;">
+          <span class="lang-en">Still stuck, or just want to say hi?</span>
+          <span class="lang-de">Hängst du fest oder willst einfach Hallo sagen?</span>
+        </p>
+        <a class="btn-chunky" href="mailto:pocasigames@icloud.com">
+          <span class="lang-en">📧 Email support</span>
+          <span class="lang-de">📧 Support per E-Mail</span>
+        </a>
+        <p class="soon" style="position:static;">
+          <span class="lang-en">Solo developer — replies may take a couple of days. Thanks for your patience!</span>
+          <span class="lang-de">Einzelentwickler — Antworten können ein paar Tage dauern. Danke für deine Geduld!</span>
+        </p>
       </div>
     </div>
   </section>
@@ -116,25 +167,47 @@
   <!-- ===== Footer ===== -->
   <footer class="site">
     <nav>
-      <a href="index.html">Home</a> ·
-      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-de">Start</span></a> ·
+      <a href="privacy.html"><span class="lang-en">Privacy Policy</span><span class="lang-de">Datenschutz</span></a> ·
       <a href="impressum.html">Impressum</a>
     </nav>
-    <div class="copy">© 2026 YappyUnc · Made with ❤️ and too much talking</div>
+    <div class="copy">
+      <span class="lang-en">© 2026 YappyUnc · Made with ❤️ and too much talking</span>
+      <span class="lang-de">© 2026 YappyUnc · Mit ❤️ und viel zu viel Gerede gemacht</span>
+    </div>
   </footer>
 
   <script>
   (function(){
-    const icon = document.getElementById('heroIcon');
-    if (icon) {
-      const M = 14;
-      icon.addEventListener('pointermove', e => {
-        const r = icon.getBoundingClientRect();
-        const nx = (e.clientX - r.left) / r.width - 0.5;
-        const ny = (e.clientY - r.top) / r.height - 0.5;
-        icon.style.transform = `rotateY(${nx*2*M}deg) rotateX(${-ny*2*M}deg)`;
+    var TITLES = {
+      en: "YappyUnc — the yapping-uncle flap game",
+      de: "YappyUnc — das Flatterspiel mit dem quasselnden Onkel"
+    };
+    function setLang(l){
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.setAttribute('lang', l);
+      try { localStorage.setItem('yu-lang', l); } catch(e){}
+      if (TITLES[l]) document.title = TITLES[l];
+      document.querySelectorAll('.lang-toggle button').forEach(function(b){
+        b.classList.toggle('active', b.getAttribute('data-l') === l);
       });
-      icon.addEventListener('pointerleave', () => { icon.style.transform = 'rotateY(0) rotateX(0)'; });
+    }
+    document.querySelectorAll('.lang-toggle button').forEach(function(b){
+      b.addEventListener('click', function(){ setLang(b.getAttribute('data-l')); });
+    });
+    setLang(document.documentElement.getAttribute('data-lang') || 'en');
+
+    // Hero icon — 3D tilt toward cursor
+    var icon = document.getElementById('heroIcon');
+    if (icon) {
+      var M = 14;
+      icon.addEventListener('pointermove', function(e){
+        var r = icon.getBoundingClientRect();
+        var nx = (e.clientX - r.left) / r.width - 0.5;
+        var ny = (e.clientY - r.top) / r.height - 0.5;
+        icon.style.transform = 'rotateY(' + (nx*2*M) + 'deg) rotateX(' + (-ny*2*M) + 'deg)';
+      });
+      icon.addEventListener('pointerleave', function(){ icon.style.transform = 'rotateY(0) rotateX(0)'; });
     }
   })();
   </script>

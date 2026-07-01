@@ -11,10 +11,8 @@ style.css        → gemeinsames Styling
 ```
 
 ## ⚠️ Vor dem Veröffentlichen ausfüllen
-Diese Platzhalter in **allen** Dateien ersetzen (Suchen & Ersetzen):
-
-- `CONTACT@EXAMPLE.COM` → deine echte Support-E-Mail
-- In `impressum.html`: `DEIN VORNAME NACHNAME`, `STRASSE / POSTFACH`, `PLZ ORT`,
+- ✅ Support-E-Mail: `pocasigames@icloud.com` (eingetragen)
+- ⏳ In `impressum.html` noch offen: `DEIN VORNAME NACHNAME`, `STRASSE / POSTFACH`, `PLZ ORT`,
   und die `USt-IdNr.` (oder die Zeile entfernen, falls noch keine vorhanden)
 
 > Hinweis: Der Repo ist **öffentlich**. Hier kommt **nur die Website** rein – niemals der
@@ -38,9 +36,9 @@ Diese Platzhalter in **allen** Dateien ersetzen (Suchen & Ersetzen):
 4. Nach 1–2 Min ist die Seite live unter:
    `https://DEIN-USER.github.io/yappyunc-site/`
 
-## Die URLs für App Store Connect
-- **Support URL:** `https://DEIN-USER.github.io/yappyunc-site/`
-- **Privacy Policy URL:** `https://DEIN-USER.github.io/yappyunc-site/privacy.html`
+## Die URLs für App Store Connect (Account: PocasiGames, Repo: `yappyunc`)
+- **Support URL:** `https://pocasigames.github.io/yappyunc/`
+- **Privacy Policy URL:** `https://pocasigames.github.io/yappyunc/privacy.html`
 
 ## Später: eigene Domain
 Wenn du eine Studio-Domain hast (z. B. `studio.com`):
